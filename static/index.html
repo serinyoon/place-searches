@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Place Searches</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+      
+  </head>
+<body>
+  <div class="content">
+                
+    <p class="instruction">Start a new search!</p>
+        
+    <form>
+      <select name="location" id="location" class="form-control">
+        <option value="food">Food</option>
+        <option value="university">University</option>
+        <option value="cemetery">Cemetery</option>
+        <option value="atm">ATM</option>
+      </select>
+      <select name="ride" id="ride" class="form-control">
+        <option value="no">I don't have a car</option>
+        <option value="yes">I have a car</option>
+      </select>
+      <br> 
+      <div class="input-group center">
+        <input type="button" class="btn btn-success" onclick ="getLocation()" value="Submit">
+      </div> 
+    </form>
+
+    <p id="demo"></p>
+    <br>
+    <div id="past"></div>
+    <br>
+    <div id="map-canvas"></div>
+    <br>
+    <div id="legend" class="center"></div>
+    <br>
+    <div id="favorites"></div>
+    <br>
+    <div id="list"></div>
+  </div>
+
+  <script type="text/javascript" src="/js/xhr.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+</body>
+</html>

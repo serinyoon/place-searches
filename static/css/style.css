@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px
+}
+
+.instruction {
+    font-size: 30px;
+    text-align: left;
+}
+
+.content {
+    width: 700px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*border: 1px solid;*/
+}
+
+#map-canvas {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#ride {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#results {
+    padding-top: 50px;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+}
+
+a:hover {
+    cursor:pointer;
+}
